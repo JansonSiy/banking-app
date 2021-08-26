@@ -81,7 +81,7 @@ button:hover {
 .purpleContainer, .displayHeightWidth {
     width: 100%;
 }
-.popupContainerDesign, .popupContainerDesignTwo, .popupContainerDesignThree {
+.greetUserContainer, .popupContainerDesign, .popupContainerDesignTwo, .popupContainerDesignThree {
     position: absolute;
 }
 .displayTitle, .displayTitleTwo {
