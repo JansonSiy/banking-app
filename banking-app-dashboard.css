@@ -1,206 +1,181 @@
-/*general designs*/
+/* general designs */
+input, button {
+    height: 40px;
+    border: 3px solid #7700b3;
+    border-radius: 10px;
+    font-size: 30px;
+}
+h1:hover, input, ::placeholder {
+    color: #b366ff;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     font-family: 'Amatic SC', cursive;
     cursor: pointer;
 }
-
-h1:hover {
-    color: #b366ff;
-}
-
 p {
+    margin-top: 5px;
     font-size: 25px;
     text-align: center;
-    margin-top: 5px;
 }
-
-button {
+input {
     height: 40px;
+    width: 150px;
+    outline: none;
+    padding-left: 15px;
+}
+button {
     width: 100px;
-    border: 2px solid #7700b3;
-    border-radius: 15px;
     background-color: #7700b3;
     color: white;
-    font-size: 30px;
 }
 button:hover {
     background-color: #b366ff;
 }
 
-input {
-    height: 40px;
-    width: 150px;
-    border-radius: 10px;
-    border: 3px solid #7700b3;
-    color: #b366ff;
-    font-size: 30px;
-    outline: none;
-    padding-left: 15px;
-}
-::placeholder { 
-    color: #b366ff;
-}
-
-/*repetitive designs*/
-.flexStyleRow {
+/* repetitive designs */
+.flexStyleRow, .flexStyleRowTwo, .flexStyleColumn, .flexStyleColumnTwo, .flexStyleColumnThree {
     display: flex;
     align-items: center;
+}
+.flexStyleColumn, .flexStyleColumnTwo, .flexStyleColumnThree {
+    flex-direction: column;
+}
+.flexStyleRow, .flexStyleColumn {
     justify-content: center;
 }
-.flexStyleRowTwo {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.flexStyleColumn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.flexStyleColumnTwo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.flexStyleRowTwo, .flexStyleColumnTwo {
     justify-content: space-evenly;
 }
 .flexStyleColumnThree {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
 }
 
-.borderStyle {
+.borderStyle, .borderStyleTwo {
     border: 3px solid #7700b3;
     border-radius: 25px;
+}
+.borderStyle {
     background-color: white;
 }
 .borderStyleTwo {
-    border: 2px solid #7700b3;
-    border-radius: 25px;
     background-color: #7700b3;
     color: white;
 }
 
-/*container designs*/
+/* container designs */
+.displayTitle, .displayTitleTwo {
+    height: 50px;
+}
+.functionContainer, .displayContainer {
+    height: 100%;
+}
+.greetUserContainer, .popupContainerDesign {
+    width: 400px;
+}
+.displaySubCon, .popupContainerDesignTwo, .popupContainerDesignThree {
+    width: 550px;
+}
+.purpleContainer, .displayHeightWidth {
+    width: 100%;
+}
+.popupContainerDesign, .popupContainerDesignTwo, .popupContainerDesignThree {
+    position: absolute;
+}
+.displayTitle, .displayTitleTwo {
+    font-size: 25px;
+}
+
 .purpleContainer {
     height: 150px;
-    width: 100%;
+    padding-left: 30px;
     background-color: #b366ff;
     color: white;
     font-size: 80px;
-    padding-left: 30px;
 }
-
 .greetUserContainer {
     height: 80px;
-    width: 400px;
-    position: absolute;
     margin: 0px 800px 750px 0px;
     font-size: 40px;
 }
-
 .dashboardContainer {
     height: 800px;
     width: 850px;
     margin: 30px 0px 0px 400px;
 }
-
 .functionContainer {
-    height: 100%;
     width: 20%;
 }
 .logoContainer {
     height: 60px;
     width: 60px;
 }
-
 .displayContainer {
-    height: 100%;
     width: 80%;
 }
 .displayHeightWidth {
     height: 50%;
-    width: 100%;
 }
 .displaySubCon {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    padding-top: 10px;
     height: 350px;
-    width: 550px;
+    padding-top: 10px;
 }
 .displayTitle {
-    height: 50px;
-    width: 130px;
-    font-size: 25px;   
+    width: 130px; 
 }
 .displayTitleTwo {
-    height: 50px;
     width: 200px;
-    font-size: 25px;
 }
-
 .popupContainerDesign {
     height: 220px;
-    width: 400px;
-    position: absolute;
     margin: 0px 0px 250px 580px;
 }
 .popupContainerDesignTwo {
     height: 200px;
-    width: 550px;
-    position: absolute;
     margin: 0px 0px 250px 565px;
 }
 .popupContainerDesignThree {
     height: 370px;
-    width: 550px;
-    position: absolute;
     margin: 0px 0px 300px 565px;
 }
-
 .expenseTitle {
     height: 40px;
     width: 500px;
     font-size: 15px;
 }
 
-/*selective design*/
+/* selective design */
+.logout, .initialPopupDesign {
+    text-align: center;
+}
+
 .hidden {
     visibility: hidden;
 }
-
 .logout {
     height: 40px;
     width: 100px;
-    color: black;
-    font-size: 30px;
-    text-align: center;
     margin: 10px 0px 20px 0px;
+    font-size: 30px;
 }
 .logout:hover {
     color:white;
     background-color: #7700b3;
 }
-
 .inputMargin {
     margin-right: 5px;
 }
-
 .initialPopupDesign {
-    text-align: center;
     width: 250px;
 }
-
 .marginTop {
     margin-top: 15px;
 }
-
 .kangaroo {
     height: 400px;
     width: 450px;
